@@ -1,0 +1,228 @@
+<!--
+    Exemplo de formulário utilizando Bootstrap 4
+    Autor: Junior Cezar dos Santos
+    Data: 21/06/2018
+    GitHub: github.com/juniorcezar
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Exemplo de Formulário</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <style>
+            body {
+                background-color: whitesmoke;
+            }
+            label {
+                color: #1f1f1f;
+                font-weight: 400;
+            }
+            .navbar {
+                border-bottom: 3px solid royalblue;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">LOGO | 2018</a>
+            </nav>
+        </header>
+        <br>
+        <div class="container">
+            <div class="row"><!-- #### Inicio da primeira linha #### -->
+                <div class="col-md-12">
+                    <h1 class="display-4">Cadastro de Cliente</h1>
+                    <hr>
+                </div>
+            </div><!-- #### Fim da primeira linha #### -->
+            <div class="row"><!-- #### Inicio da segunda linha #### -->
+                <div class="col-md-12">
+                    <form action="" class="form"><!-- Inicio do formulário -->
+                        <div class="row form-group"><!-- Primeira linha -->
+                            <div class="col-md-5">
+                                <label for="">Nome Completo</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="" name="nome" accesskey="1">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="">Data de Nascimento</label>
+                                <div class="input-group a">
+                                    <input type="text" class="form-control" placeholder="__/__/____" accesskey="2">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="">Sexo</label><br>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-venus-mars"></i></span>
+                                    </div>
+                                    <select name="sexo" id="" class="form-control" accesskey="3">
+                                        <option>Selecione</option>
+                                        <option value="Masculino">Masculino</option>
+                                        <option value="Feminino">Feminino</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="">Etnia</label>
+                                <div class="input-group a">
+                                    <select name="sexo" id="" class="form-control">
+                                        <option>Selecione</option>
+                                        <option value="Masculino">Amarelo</option>
+                                        <option value="Feminino">Branco</option>
+                                        <option value="Feminino">Pardo</option>
+                                        <option value="Feminino">Preto</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div><!-- Fim da primeira linha -->
+                        <div class="row form-group"><!-- Segunda linha -->
+                            <div class="col-md-3">
+                                <label for="">Cadastro Pessoa Física</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><strong>CPF</strong></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="___.___.___.-__">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="">Registro Geral</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><strong>RG</strong></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="">Data de Expedição RG</label>
+                                <div class="input-group a">
+                                    <input type="text" class="form-control" placeholder="__/__/____">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="">Orgão expeditor</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="">UF</label>
+                                <div class="input-group a">
+                                    <select name="sexo" id="" class="form-control">
+                                        <option>Selecione</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div><!-- Fim da segunda linha -->
+                        <div class="row form-group"><!-- Terceira linha -->
+                            <div class="col-md-2">
+                                <label for="">CEP</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <label for="">Logradouro</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="">Número</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="">Bairro</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div><!-- Fim da terceira linha -->
+                        <div class="row form-group"><!-- Quarta linha -->
+                            <div class="col-md-3">
+                                <label for="">Estado</label>
+                                <div class="input-group">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Selecione</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="">Cidade</label>
+                                <div class="input-group">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Selecione</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Complemento</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div><!-- Fim da quarta linha -->
+                        <div class="row row-group"><!-- Quinta linha -->
+                            <div class="col-md-3">
+                                <label for="">Telefone</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-phone fa-fw"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="" name=""/>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="">Celular</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="fa fa-mobile fa-fw"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="" name=""/>
+                                </div>
+                            </div>
+                            <!--E-mail -->
+                            <div class="col-md-4">
+                                <label for="" >E-mail</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="fa fa-at fa-fw"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" id="" placeholder="exemplo@exemplo.com">
+                                </div>
+                            </div>
+                        </div><!-- Fim da quinta linha -->
+                        <hr>
+                        <div class="row form-group"><!-- Linha dos botões -->
+                            <div class="col-md-5">
+                                <button type="submit" class="btn btn-primary btn-sm">Salvar</button>
+                                <button type="button" class="btn btn-danger btn-sm">Cancelar</button>
+                                <button type="reset" class="btn btn-warning btn-sm">Resetar</button>
+                            </div>
+                        </div><!-- Fim da linha dos botões -->
+                    </form><!-- Fim do formulário -->
+                </div>
+            </div><!-- #### Fim da segunda linha #### -->
+        </div>
+    </body>
+</html>
